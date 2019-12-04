@@ -5,14 +5,14 @@
     <div class="row p-5">
         <div class="col-3"><img src="/img/logo.png" alt="logo"></div>
         <div class="col-9 pt-5">
-        <h1>Codegramm</h1>
+        <div><h1>{{ $user->username }}</h1></div>
         <div class="d-flex">
             <div class="pr-5"><strong>153</strong> posts</div>
             <div class="pr-5"><strong>23k</strong> followers</div>
             <div class="pr-5"><strong>123</strong> following</div></div>
-            <div class="pt-3 font-weight-bold">codegramm</div>
-            <div class="pt-1">We're nice site of your the best photos of your life that you can easily to load up into our codegram and can be not worry about safety this ones. </div>
-            <div class=""><a href="#">www.nonexistent.io</a></div>
+            <div class="pt-3 font-weight-bold">{{ $user->profile->title }}</div>
+            <div class="pt-1">{{ $user->profile->description}}</div>
+            <div class=""><a href="#">{{ $user->profile->url }}</a></div>
         </div>
     </div>
     <div class="row pt-5">
